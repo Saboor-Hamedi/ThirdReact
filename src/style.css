@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main, section, header, nav, 
+div, span, a, li, ul, 
+h1, h2,h3,h4,h5,h6 
+p{
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+ul{
+    list-style: none;
+}
+.home{
+    min-height: 100vh;
+    background-color: rgba(52,52,52);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.active{
+    opacity: 0;
+    transition: .5s;
+}
+#letters{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    /* background-color: black; */
+}
+.Myletters{
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffde00;
+    color: #333;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 32px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow:  0 0 5px 5px white;
+}
+.ShowLetter{
+    width: 100%;
+    background-color: red;
+    padding: 10px;
+}
+.squreStyle{
+    background-color: rgb(163, 148, 148);
+    height: 250px;
+   border-top-right-radius: 5px;
+   border-top-left-radius: 5px;
+}
+.colorLabel{
+    background-color: #ffde00;
+    height: 50px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.cardStyle{
+    width: 300px;
+    height: 300px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 5px 4px #ccc;
+}
+.Mycards{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+
+}
